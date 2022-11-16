@@ -5,5 +5,5 @@ The [original implementaiton](https://github.com/tntgav/unasm) can be found in [
 
 ## Cloning
 ```
-git clone --recurse-submodules -j8
+git clone --recurse-submodules -j8 git@github.com:unasmlang/monorepo.git
 ```
