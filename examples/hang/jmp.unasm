@@ -1,0 +1,7 @@
+fully standards compliant
+
+lbl;jmp
+
+with label names
+
+lbl a;jmp a

@@ -1,0 +1,13 @@
+Overly advanced https://en.wikipedia.org/wiki/Quine_(computing)
+
+r1-
+r1-
+lbl
+r1+
+cmp
+q
+cmp
+r1+
+swap
+cmp
+jmp
