@@ -7,3 +7,6 @@
 [submodule "ts/cli"]
 	path = ts/cli
 	url = git@github.com:unasmlang/repl-cli-ts.git
+[submodule "ts/web"]
+	path = ts/web
+	url = git@github.com:unasmlang/unasmlang.github.io.git
