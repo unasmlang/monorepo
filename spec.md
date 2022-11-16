@@ -44,6 +44,10 @@ As an example, `r2 0` is equivalent to `r1 0` but for register 2
 | outc        | Outputs Register 1's value as an ascii or utf8 character |
 
 ## libunasm
+Below, you can find instructions specifically found in libunasm
+
+Note that these apply to all first-party release implementations of libunasm
+
 ### Quine
 
 | Instruction | Description                                 |
