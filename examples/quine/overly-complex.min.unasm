@@ -1,2 +1,2 @@
-single-line overly-complex-q.unasm
+single-line overly-complex.unasm
 r1 -2;lbl;r1+;cmp;q;cmp;r1+;swap;cmp;jmp;r1 0;r2 0;exit
