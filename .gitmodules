@@ -1,0 +1,9 @@
+[submodule "js.original"]
+	path = js.original
+	url = https://github.com/tntgav/unasm
+[submodule "ts/libunasm"]
+	path = ts/libunasm
+	url = git@github.com:unasmlang/libunasm-ts.git
+[submodule "ts/cli"]
+	path = ts/cli
+	url = git@github.com:unasmlang/repl-cli-ts.git
