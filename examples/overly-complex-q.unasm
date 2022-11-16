@@ -1,7 +1,7 @@
 Overly advanced https://en.wikipedia.org/wiki/Quine_(computing)
 
-r1-
-r1-
+perform the loop fuckery:
+r1 -2; if you decrase this value further, it will loop multiple times
 lbl
 r1+
 cmp
@@ -11,3 +11,8 @@ r1+
 swap
 cmp
 jmp
+
+clean up:
+r1 0
+r2 0
+exit
