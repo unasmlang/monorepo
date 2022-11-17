@@ -54,10 +54,10 @@ Why is this? idk, normalcat decided that.
 
 The below are unsafe and should NOT be enabled when running untrusted code.
 
-| Instruction | Description                               | How to enable in libunasm                               |
-|-------------|-------------------------------------------|---------------------------------------------------------|
-| jseval(1)   | Evaluates the arguments passed as JS      | Lang-Specific; [See Here](/ts/libunasm/#js-eval) for TS |
-| get         | Reads the file at args[0] & puts it in r1 | Lang-Specific; [See Here](/ts/libunasm/#fs-read) for TS |
+| Instruction | Description                               | How to enable in libunasm                                                           |
+|-------------|-------------------------------------------|-------------------------------------------------------------------------------------|
+| jseval(1)   | Evaluates the arguments passed as JS      | Lang-Specific; [See Here](https://github.com/unasmlang/libunasm-ts/#js-eval) for TS |
+| get         | Reads the file at args[0] & puts it in r1 | Lang-Specific; [See Here](https://github.com/unasmlang/libunasm-ts/#fs-read) for TS |
 
 *(1) Some implementations may use `eval` for this, although this should refer to evaluating further unasm code in the same environment.*
 
