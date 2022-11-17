@@ -63,14 +63,16 @@ The below are unsafe and should NOT be enabled when running untrusted code.
 
 ### Variables
 
-| Instruction                  | Description                                                  | Note                             |
-|------------------------------|--------------------------------------------------------------|----------------------------------|
-| saveVars &lt;name&gt;        | Saves r1 & r2 to an in-memory slot `<name>`                  |                                  |
-| loadVars &lt;name&gt;        | Loads r1 & r2 from an in-memory slot `<name>`                |                                  |
-| s &lt;name&gt; &lt;value&gt; | Sets variable `<name>` to `value` (value can include spaces) | `libunasm.variables` in libunasm |
-| g &lt;name&gt;               | Gets `<name>` & puts it in r1                                |                                  |
+| Instruction                        | Description                                                  | Note                             |
+|------------------------------------|--------------------------------------------------------------|----------------------------------|
+| saveVars &lt;name&gt;              | Saves r1 & r2 to an in-memory slot `<name>`                  |                                  |
+| loadVars &lt;name&gt;              | Loads r1 & r2 from an in-memory slot `<name>`                |                                  |
+| s &lt;name&gt; &lt;value&gt; *(1)* | Sets variable `<name>` to `value` (value can include spaces) | `libunasm.variables` in libunasm |
+| g &lt;name&gt;                     | Gets `<name>` & puts it in r1                                |                                  |
 
 *Note: Variables set using `s/g` can also be accessed in other instructions using `%variable%`, as per spec. Some implementations may ignore this.*
+
+*(1) If no value is provided, sets it to r1 - Attempts to convert to number, if conversion fails, uses a string*
 
 ## libunasm
 Below, you can find instructions specifically found in libunasm
