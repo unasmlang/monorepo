@@ -43,6 +43,16 @@ As an example, `r2 0` is equivalent to `r1 0` but for register 2
 | out         | Outputs Register 1's value                               |
 | outc        | Outputs Register 1's value as an ascii or utf8 character |
 
+### Unsafe
+
+The below are unsafe and should NOT be enabled when running untrusted code.
+
+| Instruction | Description                          | How to enable in libunasm                                                          |
+|-------------|--------------------------------------|------------------------------------------------------------------------------------|
+| jseval(1)   | Evaluates the arguments passed as JS | Lang-Specific; [See Here](https://github.com/unasmlang/libunasm-ts#js-eval) for TS |
+
+*(1) Some implementations may use `eval`, although this should refer to evaluating further unasm code in the same environment.*
+
 ## libunasm
 Below, you can find instructions specifically found in libunasm
 
@@ -59,3 +69,7 @@ Note that these apply to all first-party release implementations of libunasm
 | Instruction | Description                             |
 |-------------|-----------------------------------------|
 | ljmp        | Jumps to the specified instruction/line |
+
+## Notes
+
+Any unknown or disabled instructions should be treated as a nop by the interpereter.
